@@ -32,76 +32,78 @@ function Navbar() {
   const toggleMenu = () => {
     setMenu(!menu);
   };
-
   const handleLinkClick = () => {
     setMenu(false); // Close the menu when a link is clicked
   };
 
   return (
-    <div className="bg-[#543310] max-w-screen-2xl container mx-auto px-4 md:px-20 h-auto shadow-md fixed top-0 left-0 right-0 z-50 text-white p-2">
-      <div className="flex justify-between items-center h-16">
-        <div className="flex space-x-2">
-          {/* Replace with your logo or text */}
-          <span className="font-mono text-5xl">&lt;</span>
-          <span className="font-mono font-semibold italic text-5xl">
-            Anshul
-          </span>
-          <span className="font-mono text-5xl">&#47;</span>
-          <span className="font-mono text-5xl">&gt;</span>
-        </div>
-        {/* Desktop navbar */}
-        <div className="hidden md:flex space-x-8">
-          {navItems.map(({ id, text }) => (
-            <Link
-              key={id}
-              to={text.toLowerCase()} // Ensure the target ID is lowercase
-              smooth={true}
-              duration={500}
-              offset={-70}
-              activeClass="active"
-              spy={true}
-              className="hover:scale-105 duration-200 cursor-pointer"
-            >
-              {text}
-            </Link>
-          ))}
-        </div>
-        {/* Mobile menu toggle */}
-        <div className="md:hidden">
-          {menu ? (
-            <IoCloseSharp size={24} onClick={toggleMenu} />
-          ) : (
-            <AiOutlineMenu size={24} onClick={toggleMenu} />
-          )}
-        </div>
-      </div>
-      {/* Mobile navbar menu */}
-      {menu && (
-        <div className="bg-gray-200 text-gray-800 md:hidden absolute top-16 left-0 w-full">
-          <ul className="flex flex-col items-center justify-center space-y-3 text-xl">
+    <>
+      <div className="bg-[#543310] max-w-screen-2xl container mx-auto px-4 md:px-20 h-auto shadow-md fixed top-0 left-0 right-0 z-50 text-white p-2">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex space-x-2">
+            {/* Replace with your logo or text */}
+            <span className="font-mono text-5xl">&lt;</span>
+            <span className="font-mono font-semibold italic text-5xl">
+              Anshul
+            </span>
+            <span className="font-mono text-5xl">&#47;</span>
+            <span className="font-mono text-5xl">&gt;</span>
+          </div>
+          {/* Desktop navbar */}
+          <div className="hidden md:flex space-x-8">
             {navItems.map(({ id, text }) => (
-              <li
+              <Link
                 key={id}
-                onClick={handleLinkClick} // Close menu when a link is clicked
-                className="hover:scale-105 duration-200 font-semibold cursor-pointer"
+                to={text}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                activeClass="active"
+                spy={true}
+                className="hover:scale-105 duration-200 cursor-pointer"
               >
-                <Link
-                  to={text.toLowerCase()} // Ensure the target ID is lowercase
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  activeClass="active"
-                  spy={true}
-                  onClick={toggleMenu} // Close menu when a link is clicked
-                >
-                  {text}
-                </Link>
-              </li>
+                {text}
+              </Link>
             ))}
-          </ul>
+          </div>
+          {/* Mobile menu toggle */}
+          <div className="md:hidden">
+            {menu ? (
+              <IoCloseSharp size={24} onClick={toggleMenu} />
+            ) : (
+              <AiOutlineMenu size={24} onClick={toggleMenu} />
+            )}
+          </div>
         </div>
-      )}
-    </div>
+        {/* Mobile navbar menu */}
+        {/* Mobile navbar menu */}
+        {menu && (
+          <div className="bg-gray-200 text-gray-800 md:hidden absolute top-16 left-0 w-full">
+            <ul className="flex flex-col items-center justify-center space-y-3 text-xl">
+              {navItems.map(({ id, text }) => (
+                <li
+                  key={id}
+                  onClick={handleLinkClick} // Close menu when a link is clicked
+                  className="hover:scale-105 duration-200 font-semibold cursor-pointer"
+                >
+                  <Link
+                    to={text.toLowerCase()} // Ensure the target ID is lowercase
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    activeClass="active"
+                    spy={true}
+                    onClick={toggleMenu} // Close menu when a link is clicked
+                  >
+                    {text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </>
   );
 }
 

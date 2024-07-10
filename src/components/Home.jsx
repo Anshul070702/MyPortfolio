@@ -15,7 +15,7 @@ function Home() {
   };
 
   return (
-    <div className="bg-[#E9D5A1] bg-opacity-80 py-16 md:py-20 mt-4">
+    <div name="Home" className="bg-[#E9D5A1] bg-opacity-80 py-16 md:py-20 mt-4">
       <div className="max-w-screen-2xl container mx-auto px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center justify-between relative z-10">
         <div className="md:w-1/2 md:order-2">
           <div className="mt-12 mb-6 md:mt-0 space-y-4">
