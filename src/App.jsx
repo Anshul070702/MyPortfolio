@@ -11,13 +11,19 @@ import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <>
-      <div>
+      <div className="h-auto">
         <Navbar />
+        <hr />
         <Home />
+        <hr />
         <About />
+        <hr />
         <Projects />
+        <hr />
         <Skills />
+        <hr />
         <Contact />
+        <hr />
         <Footer />
       </div>
       <Toaster />

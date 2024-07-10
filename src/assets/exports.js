@@ -49,7 +49,7 @@ export {
 
 export const skillSet = [
   {
-    id: 2,
+    id: 1,
     logo: C,
     name: "C",
   },
@@ -59,77 +59,77 @@ export const skillSet = [
     name: "C++",
   },
   {
-    id: 2,
+    id: 3,
     logo: python,
     name: "Python",
   },
   {
-    id: 1,
+    id: 4,
     logo: html,
     name: "HTML5",
   },
   {
-    id: 2,
+    id: 5,
     logo: css,
     name: "CSS",
   },
   {
-    id: 2,
+    id: 6,
     logo: tailwind,
     name: "TailwindCSS",
   },
   {
-    id: 2,
+    id: 7,
     logo: javascript,
     name: "JavaScript",
   },
   {
-    id: 2,
+    id: 8,
     logo: react,
     name: "ReactJs",
   },
   {
-    id: 2,
+    id: 9,
     logo: node,
     name: "NodeJs",
   },
   {
-    id: 2,
+    id: 10,
     logo: express,
     name: "Expressjs",
   },
   {
-    id: 2,
+    id: 11,
     logo: mongoDB,
     name: "MongoDB",
   },
   {
-    id: 2,
+    id: 12,
     logo: mysql,
     name: "MySQL",
   },
   {
-    id: 2,
+    id: 13,
     logo: redux,
     name: "Redux",
   },
   {
-    id: 2,
+    id: 14,
     logo: bootstrap,
     name: "BootStrap",
   },
   {
-    id: 2,
+    id: 15,
     logo: git,
     name: "Git",
   },
   {
-    id: 2,
+    id: 16,
     logo: github,
     name: "GitHub",
   },
   {
-    id: 2,
+    id: 17,
     logo: next,
     name: "NextJs",
   },

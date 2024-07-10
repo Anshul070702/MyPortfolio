@@ -27,9 +27,9 @@ function About() {
   return (
     <div
       name="About"
-      className="bg-[#E9D5A1] max-w-screen-3xl container mx-auto p-4 md:px-20 my-20"
+      className="bg-[#E9E0BB] max-w-screen-3xl h-auto container mx-auto p-4 md:px-20"
     >
-      <div className="">
+      <div className="h-auto">
         <p className="text-center">
           Hello, I'm Anshul, a passionate Web developer with a keen eye for MERN
           Stack. With a background in IT, I strive to create impactful and

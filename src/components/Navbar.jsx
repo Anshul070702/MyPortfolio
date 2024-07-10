@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import pic from "../../public/photo.avif";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-scroll";
@@ -35,7 +34,9 @@ function Navbar() {
             {/* <img src={pic} className="h-12 w-12 rounded-full" alt="" /> */}
 
             <span className="font-mono text-5xl">&lt;</span>
-            <span className="font-mono font-semibold italic text-5xl">Anshul</span>
+            <span className="font-mono font-semibold italic text-5xl">
+              Anshul
+            </span>
             <span className="font-mono text-5xl">&#47;</span>
             <span className="font-mono text-5xl">&gt;</span>
           </div>
