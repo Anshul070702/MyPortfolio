@@ -33,7 +33,7 @@ function Navbar() {
     setMenu(!menu);
   };
   const handleLinkClick = () => {
-    setMenu(false); // Close the menu when a link is clicked
+    setMenu(false);
   };
 
   return (
@@ -42,12 +42,10 @@ function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex space-x-2">
             {/* Replace with your logo or text */}
-            <span className="font-mono text-5xl">&lt;</span>
-            <span className="font-mono font-semibold italic text-5xl">
-              Anshul
-            </span>
-            <span className="font-mono text-5xl">&#47;</span>
-            <span className="font-mono text-5xl">&gt;</span>
+            <span className=" text-5xl">&lt;</span>
+            <span className=" font-semibold  text-5xl">Anshul</span>
+            <span className=" text-5xl">&#47;</span>
+            <span className=" text-5xl">&gt;</span>
           </div>
           {/* Desktop navbar */}
           <div className="hidden md:flex space-x-8">
@@ -76,7 +74,6 @@ function Navbar() {
           </div>
         </div>
         {/* Mobile navbar menu */}
-        {/* Mobile navbar menu */}
         {menu && (
           <div className="bg-gray-200 text-gray-800 md:hidden absolute top-16 left-0 w-full">
             <ul className="flex flex-col items-center justify-center space-y-3 text-xl">
@@ -87,13 +84,14 @@ function Navbar() {
                   className="hover:scale-105 duration-200 font-semibold cursor-pointer"
                 >
                   <Link
-                    to={text.toLowerCase()} // Ensure the target ID is lowercase
+                    key={id}
+                    to={text}
                     smooth={true}
                     duration={500}
                     offset={-70}
                     activeClass="active"
                     spy={true}
-                    onClick={toggleMenu} // Close menu when a link is clicked
+                    onClick={toggleMenu}
                   >
                     {text}
                   </Link>
