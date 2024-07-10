@@ -30,11 +30,6 @@ function About() {
       className="bg-[#E9E0BB] max-w-screen-3xl h-auto container mx-auto p-4 md:px-20"
     >
       <div className="h-auto">
-        <p className="text-center">
-          Hello, I'm Anshul, a passionate Web developer with a keen eye for MERN
-          Stack. With a background in IT, I strive to create impactful and
-          visually stunning software solutions that leave a lasting impression.
-        </p>
         <br />
         <h1 className="font-semibold text-2xl text-center">Education</h1>
 

@@ -1,89 +1,96 @@
 import React from "react";
-// import myPic from "../assets/myPic.jpg";
-import { FaSquareFacebook } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io";
-import { FaTelegram } from "react-icons/fa6";
-import { SiMongodb } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa6";
 import user from "../../user.json";
 import Lottie from "lottie-react";
 import { ReactTyped } from "react-typed";
+import { IoLogoGithub } from "react-icons/io";
+import { SiLeetcode } from "react-icons/si";
+import { BsTwitterX, BsLinkedin } from "react-icons/bs";
 
 function Home() {
+  const handleViewResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/1PDC6iT7-v9_6T0exJXFYVub34Z6r6Q0l/view?usp=sharing",
+      "_blank"
+    );
+  };
+
   return (
-    <>
-      <div
-        name="Home"
-        className=" bg-white max-w-screen-2xl container mx-auto p-20 md:px-20 flex flex-col md:flex-row items-center justify-between"
-      >
-        <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
-          <div className="flex space-x-1 text-3xl md:text-4xl">
-            <h1 className="text-4xl ">Hello, I'm a</h1>
-            <ReactTyped
-              className="text-red-700 ml-2 text-4xl font-bold"
-              strings={["Developer", "Programmer", "Coder"]}
-              typeSpeed={100}
-              backSpeed={100}
-              loop={true}
-            />
-          </div>
-          <br />
-          <p className="text-sm md:text-md text-justify">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
-            recusandae consequatur. Accusamus sint libero eligendi laborum fuga
-            repudiandae? Asperiores tempore eos animi dolores corrupti! Sint
-            quos, mollitia architecto aliquam nesciunt, optio cum delectus sit
-            voluptatum aut ratione quaerat veniam aperiam!
-          </p>
-          <br />
-          {/* social media icons
-          <div className="flex flex-col items-center md:flex-row justify-between space-y-6 md:space-y-0">
-            <div className="  space-y-2">
-              <h1 className="font-bold text-center ">Available on</h1>
-              <ul className="flex space-x-5">
-                <li>
-                  <a href="https://www.facebook.com/" target="_blank">
-                    <FaSquareFacebook className="text-2xl cursor-pointer" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/" target="_blank">
-                    <FaLinkedin className="text-2xl cursor-pointer" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/" target="_blank">
-                    <IoLogoYoutube className="text-2xl cursor-pointer" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://t.me/" target="_blank">
-                    <FaTelegram className="text-2xl cursor-pointer" />
-                  </a>
-                </li>
-              </ul>
+    <div className="bg-[#E9D5A1] bg-opacity-80 py-16 md:py-20 mt-4">
+      <div className="max-w-screen-2xl container mx-auto px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center justify-between relative z-10">
+        <div className="md:w-1/2 md:order-2">
+          <div className="mt-12 md:mt-0 space-y-4">
+            <div className="flex md:flex-row space-x-2 text-3xl md:text-4xl lg:text-5xl">
+              <h1 className="text-4xl lg:text-5xl">Hello, I'm a</h1>
+              <ReactTyped
+                className="text-red-700 ml-2 text-4xl lg:text-5xl font-bold"
+                strings={["Developer", "Programmer", "Coder"]}
+                typeSpeed={100}
+                backSpeed={100}
+                loop={true}
+              />
             </div>
-            <div className=" space-y-2">
-              <h1 className="font-bold text-center">Currently working on</h1>
-              <div className="flex space-x-5">
-                <SiMongodb className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
-                <SiExpress className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
-                <FaReact className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
-                <FaNodeJs className="text-2xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px] cursor-pointer" />
+            <div className="flex flex-col items-center justify-center">
+              <p className="text-sm md:text-md lg:text-lg text-justify">
+                I'm Anshul, a passionate Web developer with a keen eye for MERN
+                Stack. With a background in IT, I strive to create impactful and
+                visually stunning software solutions that leave a lasting
+                impression.
+              </p>
+              <button
+                className="mt-6 px-6 py-3 bg-gradient-to-r from-purple-500 to-red-500 text-white font-bold rounded-full shadow-lg hover:from-red-500 hover:to-purple-500 transition duration-300 md:self-start md:ml-auto md:mr-0"
+                onClick={handleViewResume}
+              >
+                View Resume
+              </button>
+              <div className="flex space-x-4 mt-4">
+                <a
+                  href="https://github.com/Anshul070702"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-gray-900"
+                >
+                  <IoLogoGithub size={28} color="#333" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/anshul-336305224/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-blue-700"
+                >
+                  <BsLinkedin
+                    size={28}
+                    color="#0077B5"
+                    className="hover:text-blue-800 transition duration-300"
+                  />
+                </a>
+                <a
+                  href="https://x.com/gravity_0707"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-blue-500"
+                >
+                  <BsTwitterX size={28} color="black" />
+                </a>
+                <a
+                  href="https://leetcode.com/u/Anshul_0707/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-green-500"
+                >
+                  <SiLeetcode size={28} color="#FFA116" />
+                </a>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
-        <div className="md:w-1/2 md:ml-8 order-1 md:order-2 border-solid border-gray-100">
-          <Lottie animationData={user} />
+        <div className="md:w-1/2 md:ml-8 md:order-1">
+          <Lottie
+            animationData={user}
+            className="max-w-full h-auto md:max-w-md lg:max-w-lg"
+          />
         </div>
       </div>
-
-      <hr />
-    </>
+    </div>
   );
 }
 
