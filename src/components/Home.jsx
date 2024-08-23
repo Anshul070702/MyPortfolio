@@ -9,7 +9,7 @@ import { BsTwitterX, BsLinkedin } from "react-icons/bs";
 function Home() {
   const handleViewResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1rDaRbFCdMDQUCSlzmQ3puPy9JZ0Lvf9D/view?usp=sharing",
+      "https://drive.google.com/file/d/1BytWtVIkl8JozFRJjPmo7nCz721UeHfO/view?usp=sharing",
       "_blank"
     );
   };
