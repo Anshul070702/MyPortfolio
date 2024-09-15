@@ -5,13 +5,11 @@ import { ReactTyped } from "react-typed";
 import { IoLogoGithub } from "react-icons/io";
 import { SiLeetcode } from "react-icons/si";
 import { BsTwitterX, BsLinkedin } from "react-icons/bs";
+import { Resume } from "../constants/Projects";
 
 function Home() {
   const handleViewResume = () => {
-    window.open(
-      "https://drive.google.com/file/d/1BytWtVIkl8JozFRJjPmo7nCz721UeHfO/view?usp=sharing",
-      "_blank"
-    );
+    window.open(Resume, "_blank");
   };
 
   return (

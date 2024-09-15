@@ -57,3 +57,6 @@ export const projectList = [
     deployedLink: "https://nike-lac-seven.vercel.app/",
   },
 ];
+
+export const Resume =
+  "https://drive.google.com/file/d/1MwEax4QIwYYmAumiFKOT-Gvaf-n4wJGD/view?usp=sharing";
